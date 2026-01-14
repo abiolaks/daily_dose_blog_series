@@ -11,4 +11,5 @@ data = {
 start = time.time()
 response = requests.post("http://localhost:5000/predict", json=data)
 end = time.time()
+print("Response:", response.json())
 print(f"Prediction took {end - start} seconds")
